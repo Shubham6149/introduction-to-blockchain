@@ -9,7 +9,7 @@ This is a practical task demonstrate how to create a Metamask wallet and perform
 # Transaction details
 Network : Sepolia Testent Amount Sent : 0.02 ETH Transaction hash:
 <br>
-0x7cf27df61b25a56c316ceaf087a566567c4283908cebf60da27fdcc4a4bd9172view transaction on etherscan Status : Successful
+0x7cf27df61b25a56c316ceaf087a566567c4283908cebf60da27fdcc4a4bd9172view (https://sepolia.etherscan.io/tx/0x30592f0abe394df3be9d0c9932c5498b09929410f980727a079f99e8d41acc93) Status : Successful
 
 # Getting Sepolia ETH from Faucet
 1.Visited the google cloud Sepolia Faucet.
