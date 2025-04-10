@@ -20,7 +20,7 @@ Network : Sepolia Testent Amount Sent : 0.02 ETH Transaction hash:
 <br>
 3.Entered my Metamask wallet address.
 <br>
-4.Clicked on "Request 0.02 ETH".
+4.Clicked on "Request 0.05 ETH".
 <br>
 5.ETH was sent to my wallet within a few seconds.
 <br>
