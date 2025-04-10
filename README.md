@@ -51,6 +51,8 @@ I downloaded and install IPFS desktop for windows from the official website : (h
 1.After installing, I launched the IPFS desktop.
 <br>
 2.IPFS node automatically connected and status showed as Online.
+<br>
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/180752cf40c31e3c7a3a8f53c9ac5aed9c81785d/Screenshot%20(2).png)
 
 
 # File Upload
