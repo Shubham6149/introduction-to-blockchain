@@ -41,3 +41,22 @@ Below is the screenshot of getting ETH from sepolia faucet using google cloud: S
 Below is the screenshot of the transaction: Screenshot 2025-04-07 213239
 <br>
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/eb92c420254fab1656962e38fe0fc3dd4407d60a/Screenshot%202025-04-08%20170404.png)
+
+
+# IPFS Practical - Uploading a file to IPFS
+# IPFS Installation
+I downloaded and install IPFS desktop for windows from the official website : (https://docs.ipfs.tech/install/ipfs-desktop/)
+
+# IPFS Setup
+1.After installing, I launched the IPFS desktop.
+<br>
+2.IPFS node automatically connected and status showed as Online.
+
+
+# File Upload
+1.I clicked on the file section in IPFS Desktop.
+<br>
+2.Then i selected the option "Import" and uploaded a sample file, picture of flower and music also.
+<br>
+3.Once the file was uploaded, IPFS generate a unique CID(Content Identifier) for the file.
+
