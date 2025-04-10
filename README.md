@@ -63,4 +63,6 @@ I downloaded and install IPFS desktop for windows from the official website : (h
 3.Once the file was uploaded, IPFS generate a unique CID(Content Identifier) for the file.
 <br>
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/6df133f50023617a56eb99b49d9172e02148f40b/Screenshot%20(5).png)
+<br>
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/a1b48d3f6eb73d8270b04ccf6c3f69306faf3336/Screenshot%20(4).png)
 
