@@ -61,4 +61,6 @@ I downloaded and install IPFS desktop for windows from the official website : (h
 2.Then i selected the option "Import" and uploaded a sample file, picture of flower and music also.
 <br>
 3.Once the file was uploaded, IPFS generate a unique CID(Content Identifier) for the file.
+<br>
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/6df133f50023617a56eb99b49d9172e02148f40b/Screenshot%20(5).png)
 
