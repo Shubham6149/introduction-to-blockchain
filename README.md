@@ -41,6 +41,8 @@ Below is the screenshot of getting ETH from sepolia faucet using google cloud: S
 Below is the screenshot of the transaction: Screenshot 2025-04-07 213239
 <br>
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/eb92c420254fab1656962e38fe0fc3dd4407d60a/Screenshot%202025-04-08%20170404.png)
+<br>
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/2b1b0bd2fd57b38edcb9ac65eedc251facc34a1a/Screenshot%202025-04-11%20081631.png)
 
 
 # IPFS Practical - Uploading a file to IPFS
