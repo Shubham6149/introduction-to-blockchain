@@ -164,7 +164,7 @@ Shows the options available with the network.sh script.
 <br>
 
 Screenshot
-![image alt]()
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/8c17d5c5768067011c18c198eee4f174c3a153e8/Screenshot%202025-04-13%20143444.png)
 
 9.Start the Fabric Network
 ```
