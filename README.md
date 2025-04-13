@@ -100,6 +100,7 @@ Verifies that Docker is installed and running correctly.
 
 # Screenshot
 <br>
+
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/a51ddc26719a0b9bdd0b5ba355acdeb0cc93c2d8/Screenshot%202025-04-13%20143202.png)
 
 3.Check Docker Compose Version
@@ -112,6 +113,7 @@ Verifies the installation of Docker Compose.
 
 # Screenshot
 <br>
+
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/734e23a30bd221490c1f90a5a74c6a59b6d57fa8/Screenshot%202025-04-13%20143214.png)
 
 4.List Files in Current Directory
@@ -132,6 +134,7 @@ Downloads the official Hyperledger Fabric sample code from GitHub. Enters the cl
 
 # Screenshot
 <br>
+
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/c60d163704080172d9d9dde2420abb47b3e7b90c/Screenshot%202025-04-13%20143238.png)
 
 6.Download Fabric Binaries
@@ -144,6 +147,7 @@ Downloads necessary Fabric binaries and Docker images like peer, orderer, and cr
 
 # Screenshot
 <br>
+
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/4a7126e7a7a47282e593adb268b226e38f9f93b3/Screenshot%202025-04-13%20143250.png)
 <br>
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/06274ff129fbb8833dfb4d70e7af24e23f9ed336/Screenshot%202025-04-13%20143339.png)
@@ -158,6 +162,7 @@ Navigates to the directory that contains scripts for running a sample Fabric net
 
 # Screenshot
 <br>
+
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/6135b4d97defaf4ffc4fe124fa8fb0d40d71587c/Screenshot%202025-04-13%20143416.png)
 
 8.View the Network Script
@@ -170,6 +175,7 @@ Shows the options available with the network.sh script.
 
 # Screenshot
 <br>
+
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/8c17d5c5768067011c18c198eee4f174c3a153e8/Screenshot%202025-04-13%20143444.png)
 
 9.Start the Fabric Network
@@ -182,6 +188,7 @@ Starts the network by launching peer, orderer, and CA containers, and generates 
 
 # Screenshot
 <br>
+
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/955425f88caa472c8df9ed3118ee7a485b7a3978/Screenshot%202025-04-13%20143454.png)
 
 10.Create a Channel
@@ -194,6 +201,7 @@ Creates a default channel (usually named mychannel) and joins the peers to it.
 
 # Screenshot
 <br>
+
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/ed6c7d843c0dcd00ba27314a54ab6030aaa81e80/Screenshot%202025-04-13%20143507.png)
 
 11.Shut Down the Network
@@ -206,6 +214,7 @@ Stops all containers and deletes the crypto material and artifacts created durin
 
 # Screenshot
 <br>
+
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/11188af1f5246f4e96a6298efee19276b75010b7/Screenshot%202025-04-13%20143529.png)
 
 
