@@ -77,10 +77,10 @@ I downloaded and install IPFS desktop for windows from the official website : (h
  <br>
 ```
 
- sudo apt install golang-go
+ 
 ```
 
-
+sudo apt install golang-go
 
 
 
