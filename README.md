@@ -106,7 +106,9 @@ docker compose version
 <br>
 Verifies the installation of Docker Compose.
 <br>
+
 Screenshot
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/734e23a30bd221490c1f90a5a74c6a59b6d57fa8/Screenshot%202025-04-13%20143214.png)
 
 4.List Files in Current Directory
 ```
