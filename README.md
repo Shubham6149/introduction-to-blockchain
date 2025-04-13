@@ -195,8 +195,9 @@ Screenshot
 <br>
 Stops all containers and deletes the crypto material and artifacts created during the setup.
 <br>
-Screenshot
 
+Screenshot
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/11188af1f5246f4e96a6298efee19276b75010b7/Screenshot%202025-04-13%20143529.png)
 
 
 
