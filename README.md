@@ -184,8 +184,9 @@ Screenshot
 <br>
 Creates a default channel (usually named mychannel) and joins the peers to it.
 <br>
-Screenshot
 
+Screenshot
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/ed6c7d843c0dcd00ba27314a54ab6030aaa81e80/Screenshot%202025-04-13%20143507.png)
 
 11.Shut Down the Network
 ```
