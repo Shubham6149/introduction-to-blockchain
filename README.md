@@ -83,8 +83,18 @@ sudo apt install golang-go
 
 <br>
 Installs Golang, which is necessary for running Hyperledger Fabric binaries.
-
+<br>
 Screenshot
+
+2. Check Docker Version
+```
+docker --version
+```
+<br>
+Verifies that Docker is installed and running correctly.
+<br>
+Screenshot
+
 
 
 
