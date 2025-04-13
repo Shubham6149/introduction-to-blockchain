@@ -95,6 +95,87 @@ Verifies that Docker is installed and running correctly.
 <br>
 Screenshot
 
+3.Check Docker Compose Version
+```
+docker compose version
+```
+<br>
+Verifies the installation of Docker Compose.
+<br>
+Screenshot
+
+4.List Files in Current Directory
+```
+ls
+```
+<br>
+Shows the list of files and folders in the current directory.
+
+5.Clone the Fabric Samples Repository and Move into the Cloned Folder
+```
+git clone https://github.com/Akshitakaushik123/fabric-samples.git; cd fabric-samples
+```
+<br>
+Downloads the official Hyperledger Fabric sample code from GitHub. Enters the cloned folder where Fabric examples are available.
+<br>
+Screenshot
+
+6.Download Fabric Binaries
+```
+curl -sSL https://bit.ly/2ysbOFE | bash -s
+```
+<br>
+Downloads necessary Fabric binaries and Docker images like peer, orderer, and cryptogen.
+<br>
+Screenshot
+
+7.Enter the Test Network Directory
+```
+cd test-network
+```
+<br>
+Navigates to the directory that contains scripts for running a sample Fabric network.
+<br>
+Screenshot
+
+8.View the Network Script
+```
+./network.sh
+```
+<br>
+Shows the options available with the network.sh script.
+<br>
+Screenshot
+
+9.Start the Fabric Network
+```
+./network.sh up
+```
+<br>
+Starts the network by launching peer, orderer, and CA containers, and generates the required cryptographic materials.
+<br>
+Screenshot
+
+10.Create a Channel
+```
+./network.sh createChannel
+```
+<br>
+Creates a default channel (usually named mychannel) and joins the peers to it.
+<br>
+Screenshot
+
+
+11.Shut Down the Network
+```
+./network.sh down
+```
+<br>
+Stops all containers and deletes the crypto material and artifacts created during the setup.
+<br>
+Screenshot
+
+
 
 
 
