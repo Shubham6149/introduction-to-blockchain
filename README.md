@@ -173,7 +173,9 @@ Screenshot
 <br>
 Starts the network by launching peer, orderer, and CA containers, and generates the required cryptographic materials.
 <br>
+
 Screenshot
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/955425f88caa472c8df9ed3118ee7a485b7a3978/Screenshot%202025-04-13%20143454.png)
 
 10.Create a Channel
 ```
