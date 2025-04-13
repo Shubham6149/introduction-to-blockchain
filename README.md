@@ -77,9 +77,10 @@ I downloaded and install IPFS desktop for windows from the official website : (h
  <br>
 ```bash
  sudo apt install golang-go
-``` 
+```
+<br>
 Installs Golang, which is necessary for running Hyperledger Fabric binaries.
-
+<br>
 Screenshot
 
 
