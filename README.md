@@ -127,7 +127,9 @@ git clone https://github.com/Akshitakaushik123/fabric-samples.git; cd fabric-sam
 <br>
 Downloads the official Hyperledger Fabric sample code from GitHub. Enters the cloned folder where Fabric examples are available.
 <br>
+
 Screenshot
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/c60d163704080172d9d9dde2420abb47b3e7b90c/Screenshot%202025-04-13%20143238.png)
 
 6.Download Fabric Binaries
 ```
