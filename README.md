@@ -85,7 +85,7 @@ sudo apt install golang-go
 Installs Golang, which is necessary for running Hyperledger Fabric binaries.
 <br>
 
-Screenshot
+# Screenshot
 <br>
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/e38de3438849018b3853100088275a071ea9990d/Screenshot%202025-04-13%20143125.png)
 
@@ -97,7 +97,7 @@ docker --version
 Verifies that Docker is installed and running correctly.
 <br>
 
-Screenshot
+# Screenshot
 <br>
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/a51ddc26719a0b9bdd0b5ba355acdeb0cc93c2d8/Screenshot%202025-04-13%20143202.png)
 
@@ -109,7 +109,7 @@ docker compose version
 Verifies the installation of Docker Compose.
 <br>
 
-Screenshot
+# Screenshot
 <br>
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/734e23a30bd221490c1f90a5a74c6a59b6d57fa8/Screenshot%202025-04-13%20143214.png)
 
@@ -119,8 +119,7 @@ ls
 ```
 <br>
 Shows the list of files and folders in the current directory.
-<br>
-Screenshot
+
 
 5.Clone the Fabric Samples Repository and Move into the Cloned Folder
 ```
@@ -130,7 +129,7 @@ git clone -b main https://github.com/hyperledger/fabric-samples.git
 Downloads the official Hyperledger Fabric sample code from GitHub. Enters the cloned folder where Fabric examples are available.
 <br>
 
-Screenshot
+# Screenshot
 <br>
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/c60d163704080172d9d9dde2420abb47b3e7b90c/Screenshot%202025-04-13%20143238.png)
 
@@ -142,7 +141,7 @@ curl -sSL https://bit.ly/2ysbOFE | bash -s
 Downloads necessary Fabric binaries and Docker images like peer, orderer, and cryptogen.
 <br>
 
-Screenshot
+# Screenshot
 <br>
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/4a7126e7a7a47282e593adb268b226e38f9f93b3/Screenshot%202025-04-13%20143250.png)
 <br>
@@ -156,7 +155,7 @@ cd test-network
 Navigates to the directory that contains scripts for running a sample Fabric network.
 <br>
 
-Screenshot
+# Screenshot
 <br>
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/6135b4d97defaf4ffc4fe124fa8fb0d40d71587c/Screenshot%202025-04-13%20143416.png)
 
@@ -168,7 +167,7 @@ Screenshot
 Shows the options available with the network.sh script.
 <br>
 
-Screenshot
+# Screenshot
 <br>
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/8c17d5c5768067011c18c198eee4f174c3a153e8/Screenshot%202025-04-13%20143444.png)
 
@@ -180,7 +179,7 @@ Screenshot
 Starts the network by launching peer, orderer, and CA containers, and generates the required cryptographic materials.
 <br>
 
-Screenshot
+# Screenshot
 <br>
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/955425f88caa472c8df9ed3118ee7a485b7a3978/Screenshot%202025-04-13%20143454.png)
 
@@ -192,7 +191,7 @@ Screenshot
 Creates a default channel (usually named mychannel) and joins the peers to it.
 <br>
 
-Screenshot
+# Screenshot
 <br>
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/ed6c7d843c0dcd00ba27314a54ab6030aaa81e80/Screenshot%202025-04-13%20143507.png)
 
@@ -204,7 +203,7 @@ Screenshot
 Stops all containers and deletes the crypto material and artifacts created during the setup.
 <br>
 
-Screenshot
+# Screenshot
 <br>
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/11188af1f5246f4e96a6298efee19276b75010b7/Screenshot%202025-04-13%20143529.png)
 
