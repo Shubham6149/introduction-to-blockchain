@@ -162,7 +162,9 @@ Screenshot
 <br>
 Shows the options available with the network.sh script.
 <br>
+
 Screenshot
+![image alt]()
 
 9.Start the Fabric Network
 ```
