@@ -87,6 +87,7 @@ Installs Golang, which is necessary for running Hyperledger Fabric binaries.
 
 # Screenshot
 <br>
+
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/e38de3438849018b3853100088275a071ea9990d/Screenshot%202025-04-13%20143125.png)
 
 2. Check Docker Version
