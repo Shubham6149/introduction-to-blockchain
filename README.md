@@ -95,7 +95,9 @@ docker --version
 <br>
 Verifies that Docker is installed and running correctly.
 <br>
+
 Screenshot
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/a51ddc26719a0b9bdd0b5ba355acdeb0cc93c2d8/Screenshot%202025-04-13%20143202.png)
 
 3.Check Docker Compose Version
 ```
