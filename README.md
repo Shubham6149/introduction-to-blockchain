@@ -116,6 +116,9 @@ ls
 ```
 <br>
 Shows the list of files and folders in the current directory.
+<br>
+Screenshot
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/1345d2f91d300bf50fa53f3c0fcbb73618461024/Screenshot%202025-04-13%20143224.png)
 
 5.Clone the Fabric Samples Repository and Move into the Cloned Folder
 ```
