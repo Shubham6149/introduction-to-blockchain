@@ -151,7 +151,9 @@ cd test-network
 <br>
 Navigates to the directory that contains scripts for running a sample Fabric network.
 <br>
+
 Screenshot
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/6135b4d97defaf4ffc4fe124fa8fb0d40d71587c/Screenshot%202025-04-13%20143416.png)
 
 8.View the Network Script
 ```
