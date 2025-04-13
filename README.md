@@ -68,3 +68,43 @@ I downloaded and install IPFS desktop for windows from the official website : (h
 <br>
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/a1b48d3f6eb73d8270b04ccf6c3f69306faf3336/Screenshot%20(4).png)
 
+
+
+#Hyperledger Fabric test network
+1. Install Go (Golang)
+2. <br>
+Golang is a required dependency for running Hyperledger Fabric.
+
+'''sudo apt install golang-go'''
+<br>
+2. Check Docker Installation
+<br>
+Docker is needed to run Fabric components as containers. Verify it's installed:
+
+'''docker --version'''
+3. Check Docker Compose Installation
+Docker Compose is used to manage multi-container applications like Fabric.
+
+docker-compose --version
+4. List the Files in the Current Directory
+Just to verify where you are.
+
+ls
+5. Clone the Hyperledger Fabric Samples Repository
+This repository contains example configurations and network setups.
+
+git clone -b main https://github.com/hyperledger/fabric-samples.git
+6. Change into the Fabric Samples Directory
+Move into the directory you just cloned.
+
+cd fabric-samples
+7. Download the Binaries and Docker Images
+This command fetches the necessary binaries and Docker images for Fabric.
+
+curl -sSL https://bit.ly/2ysbOFE | bash -s
+8. Navigate to the Test Network Directory
+This directory contains scripts to bring up a sample Fabric network.
+
+cd test-network
+
+
