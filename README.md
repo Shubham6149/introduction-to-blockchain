@@ -163,7 +163,7 @@ Navigates to the directory that contains scripts for running a sample Fabric net
 # Screenshot
 <br>
 
-![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/6135b4d97defaf4ffc4fe124fa8fb0d40d71587c/Screenshot%202025-04-13%20143416.png)
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/945b4ad4f46e56dc57d14c3cb519d582fa798677/Screenshot%202025-04-16%20220614.png)
 
 8.View the Network Script
 ```
