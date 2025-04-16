@@ -150,7 +150,7 @@ Downloads necessary Fabric binaries and Docker images like peer, orderer, and cr
 
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/0ddebda48d2428b03eb88c0347bf3f66b0d4b8e5/Screenshot%202025-04-16%20220524.png)
 <br>
-![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/06274ff129fbb8833dfb4d70e7af24e23f9ed336/Screenshot%202025-04-13%20143339.png)
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/66c340382f6ee3bf920b01e6f08ece2fc313e373/Screenshot%202025-04-16%20220556.png)
 
 7.Enter the Test Network Directory
 ```
