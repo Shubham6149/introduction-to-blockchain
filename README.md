@@ -218,7 +218,7 @@ Stops all containers and deletes the crypto material and artifacts created durin
 # Screenshot
 <br>
 
-![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/11188af1f5246f4e96a6298efee19276b75010b7/Screenshot%202025-04-13%20143529.png)
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/9b5aa30f291f7f1ea68c4a86ac196971465f59e7/Screenshot%202025-04-16%20221651.png)
 
 
 
