@@ -73,7 +73,9 @@ I downloaded and install IPFS desktop for windows from the official website : (h
 
 
 # Hyperledger Fabric Practical
-1. Install Golang
+<br>
+
+# 1. Install Golang
  <br>
 
 ```
@@ -90,7 +92,7 @@ Installs Golang, which is necessary for running Hyperledger Fabric binaries.
 
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/8b945277507cdb260b5077bb727f56ebbf6f74b6/Screenshot%202025-04-16%20220330.png)
 
-2. Check Docker Version
+# 2. Check Docker Version
 ```
 docker --version
 ```
@@ -103,7 +105,7 @@ Verifies that Docker is installed and running correctly.
 
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/60995a7ce104d527d0fef2112a50ab0ea0baaa4b/Screenshot%202025-04-16%20220342.png)
 
-3.Check Docker Compose Version
+# 3.Check Docker Compose Version
 ```
 docker compose version
 ```
@@ -116,7 +118,7 @@ Verifies the installation of Docker Compose.
 
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/a1e87e4b0f7abf24eb6de9a8a150b1cce67de2e5/Screenshot%202025-04-16%20220352.png)
 
-4.List Files in Current Directory
+# 4.List Files in Current Directory
 ```
 ls
 ```
@@ -124,7 +126,7 @@ ls
 Shows the list of files and folders in the current directory.
 
 
-5.Clone the Fabric Samples Repository and Move into the Cloned Folder
+# 5.Clone the Fabric Samples Repository and Move into the Cloned Folder
 ```
 git clone -b main https://github.com/hyperledger/fabric-samples.git
 ```
@@ -137,7 +139,7 @@ Downloads the official Hyperledger Fabric sample code from GitHub. Enters the cl
 
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/da5fcfde196a72065455d0d042c854ff7fe6c401/Screenshot%202025-04-16%20220408.png)
 
-6.Download Fabric Binaries
+# 6.Download Fabric Binaries
 ```
 curl -sSL https://bit.ly/2ysbOFE | bash -s
 ```
@@ -152,7 +154,7 @@ Downloads necessary Fabric binaries and Docker images like peer, orderer, and cr
 <br>
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/66c340382f6ee3bf920b01e6f08ece2fc313e373/Screenshot%202025-04-16%20220556.png)
 
-7.Enter the Test Network Directory
+# 7.Enter the Test Network Directory
 ```
 cd test-network
 ```
@@ -165,7 +167,7 @@ Navigates to the directory that contains scripts for running a sample Fabric net
 
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/945b4ad4f46e56dc57d14c3cb519d582fa798677/Screenshot%202025-04-16%20220614.png)
 
-8.View the Network Script
+# 8.View the Network Script
 ```
 ./network.sh
 ```
@@ -178,7 +180,7 @@ Shows the options available with the network.sh script.
 
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/b82ab3b32647da9bcfcccdb280064efbde465c2a/Screenshot%202025-04-16%20220638.png)
 
-9.Start the Fabric Network
+# 9.Start the Fabric Network
 ```
 ./network.sh up
 ```
@@ -191,7 +193,7 @@ Starts the network by launching peer, orderer, and CA containers, and generates 
 
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/a211b218b2403536e1669b499ae3199597212898/Screenshot%202025-04-16%20221553.png)
 
-10.Create a Channel
+# 10.Create a Channel
 ```
 ./network.sh createChannel
 ```
@@ -207,7 +209,7 @@ Creates a default channel (usually named mychannel) and joins the peers to it.
 
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/0b54ae74a55ca48f94d789423995b2e095c6b61f/Screenshot%202025-04-16%20221628.png)
 
-11.Shut Down the Network
+# 11.Shut Down the Network
 ```
 ./network.sh down
 ```
