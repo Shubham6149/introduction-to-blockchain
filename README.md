@@ -101,7 +101,7 @@ Verifies that Docker is installed and running correctly.
 # Screenshot
 <br>
 
-![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/a51ddc26719a0b9bdd0b5ba355acdeb0cc93c2d8/Screenshot%202025-04-13%20143202.png)
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/60995a7ce104d527d0fef2112a50ab0ea0baaa4b/Screenshot%202025-04-16%20220342.png)
 
 3.Check Docker Compose Version
 ```
