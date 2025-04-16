@@ -202,7 +202,10 @@ Creates a default channel (usually named mychannel) and joins the peers to it.
 # Screenshot
 <br>
 
-![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/ed6c7d843c0dcd00ba27314a54ab6030aaa81e80/Screenshot%202025-04-13%20143507.png)
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/9f61906eb0cc443b6ee8532eb70a9d704f61fd32/Screenshot%202025-04-16%20221613.png)
+<br>
+
+![image alt]()
 
 11.Shut Down the Network
 ```
