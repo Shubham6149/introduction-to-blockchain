@@ -135,7 +135,7 @@ Downloads the official Hyperledger Fabric sample code from GitHub. Enters the cl
 # Screenshot
 <br>
 
-![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/c60d163704080172d9d9dde2420abb47b3e7b90c/Screenshot%202025-04-13%20143238.png)
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/da5fcfde196a72065455d0d042c854ff7fe6c401/Screenshot%202025-04-16%20220408.png)
 
 6.Download Fabric Binaries
 ```
