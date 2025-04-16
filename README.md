@@ -189,7 +189,7 @@ Starts the network by launching peer, orderer, and CA containers, and generates 
 # Screenshot
 <br>
 
-![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/955425f88caa472c8df9ed3118ee7a485b7a3978/Screenshot%202025-04-13%20143454.png)
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/a211b218b2403536e1669b499ae3199597212898/Screenshot%202025-04-16%20221553.png)
 
 10.Create a Channel
 ```
