@@ -114,7 +114,7 @@ Verifies the installation of Docker Compose.
 # Screenshot
 <br>
 
-![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/734e23a30bd221490c1f90a5a74c6a59b6d57fa8/Screenshot%202025-04-13%20143214.png)
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/a1e87e4b0f7abf24eb6de9a8a150b1cce67de2e5/Screenshot%202025-04-16%20220352.png)
 
 4.List Files in Current Directory
 ```
