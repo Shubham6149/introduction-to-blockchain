@@ -1,4 +1,4 @@
-# introduction-to-blockchain
+# Introduction-to-blockchain
 # Blockchain-practical-metamask-wallet
 This repo contains my blockchain practical screenshots and transaction hash.
 
@@ -26,9 +26,11 @@ Network : Sepolia Testent Amount Sent : 0.02 ETH Transaction hash:
 <br>
 6.Verified the transaction on sepolia Etherscan.
 # Screenshot
+<br>
 Below is the screenshot of getting ETH from sepolia faucet using google cloud: Screenshot 2025-04-08 120659
 
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/c419c994e1b294e696eece66e8664d2b5c1f24eb/Screenshot%202025-04-08%20170241.png)
+
 # Steps followed
 1.Connected Metamask to Sepolia Testnet.
 <br>
