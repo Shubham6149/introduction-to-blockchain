@@ -71,19 +71,54 @@ I downloaded and install IPFS desktop for windows from the official website : (h
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/a1b48d3f6eb73d8270b04ccf6c3f69306faf3336/Screenshot%20(4).png)
 
 
-# Assignment
-<br>
-Installation of IPFS on local machine. Further, upload the files (such as photos, audio, and video) on IPFS and share it with other through content identifier (i.e., hash). Perform assessment using ubuntu WSL.
+# Assignment 5: IPFS Privacy and Encryption
+This assignment demonstrates how to use the InterPlanetary File System (IPFS) along with OpenSSL to perform file encryption and ensure privacy via the command line.
 
-# Step 1: Install IPFS on Ubuntu WSL
-
-Download IPFS:
+# Steps
+# 1. Create a file to be added to IPFS
 ```
-wget https://dist.ipfs.tech/kubo/v0.34.1/kubo_v0.34.1_linux-amd64.tar.gz
+
+echo "Hello, IPFS!" > myfile.txt
+```
+<br>
+
+# 2.Add the original file to IPFS
+```
+
+ipfs add myfile.txt
+```
+# 3.Encrypt the file using OpenSSL (AES-256-CBC)
+```
+
+openssl enc -aes-256-cbc -pbkdf2 -iter 100000 -salt -in myfile.txt -out myfile_encrypted.txt -pass pass:yourpassword
+```
+# 4.Add the encrypted file to IPFS
+```
+
+ipfs add myfile_encrypted.txt
+```
+# 5.View the encrypted file (optional)
+```
+
+cat myfile_encrypted.txt
+```
+# 6.Decrypt the file
+```
+
+openssl enc -d -aes-256-cbc -pbkdf2 -iter 100000 -in myfile_encrypted.txt -out decrypted_file.txt -pass pass:yourpassword
+```
+# 7.Verify the decrypted file content
+```
+
+cat decrypted_file.txt
+```
+# 8.Add the decrypted file to IPFS
+```
+
+ipfs add decrypted_file.txt
 ```
 
 ![image alt](
-
 
 
 # Hyperledger Fabric Practical
