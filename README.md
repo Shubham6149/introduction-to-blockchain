@@ -121,7 +121,8 @@ ipfs add decrypted_file.txt
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/2913b4807c0a523feccfc47339d8db17027128f2/Screenshot%202025-04-20%20160622.png)
 
 # Notes
-.Replace `yourpassword` with a strong, secure password of your choice.
+● This is a line with a big dot Replace `yourpassword` with a strong, secure password of your choice.
+<br>
 .Ensure that IPFS is properly installed and initialized before running these commands.
 
 
