@@ -71,6 +71,18 @@ I downloaded and install IPFS desktop for windows from the official website : (h
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/a1b48d3f6eb73d8270b04ccf6c3f69306faf3336/Screenshot%20(4).png)
 
 
+# Assignment
+<br>
+Installation of IPFS on local machine. Further, upload the files (such as photos, audio, and video) on IPFS and share it with other through content identifier (i.e., hash). Perform assessment using ubuntu WSL.
+
+# Step 1: Install IPFS on Ubuntu WSL
+
+Download IPFS:
+```
+wget https://dist.ipfs.tech/kubo/v0.34.1/kubo_v0.34.1_linux-amd64.tar.gz
+```
+
+![image alt](
 
 
 
