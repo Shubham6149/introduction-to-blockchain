@@ -293,6 +293,9 @@ It’s an online editor where you can write, test, and deploy Solidity code dire
 
 <br>
 Step 2: Write Your First Smart Contract (in Solidity)
+
+
+
 ```
 pragma solidity ^0.8.0;
 
@@ -304,6 +307,7 @@ contract HelloWorld {
     }
 }
 ```
+
 
 
 
