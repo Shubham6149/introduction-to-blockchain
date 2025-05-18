@@ -290,6 +290,7 @@ Website: https://remix.ethereum.org
 <br>
 
 It’s an online editor where you can write, test, and deploy Solidity code directly in your browser. No installation needed.
+
 <br>
 Step 2: Write Your First Smart Contract (in Solidity)
 ```
@@ -304,6 +305,37 @@ contract HelloWorld {
     }
 }
 ```
+
+Step 3: Compile the Contract In Remix:
+<br>
+
+Click on the Solidity compiler tab (compiler icon).
+<br>
+
+Click Compile to check for errors.
+
+Step 4: Deploy the Smart Contract Go to the Deploy & Run Transactions tab in Remix.
+<br>
+
+Choose Environment as "JavaScript VM" (for testing in browser).
+<br>
+
+Click Deploy.
+<br>
+
+After deployment, contract will appear in the Deployed Contracts section.
+<br>
+
+Step 5: Interact with the Contract Now you can:
+<br>
+
+Click message() to read the current message.
+<br>
+
+Use setMessage() to change the message.
+<br>
+
+This simulates how smart contracts work on blockchain.
 
 
 
