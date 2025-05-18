@@ -281,5 +281,34 @@ Stops all containers and deletes the crypto material and artifacts created durin
 
 
 
+# Solidity
+
+Step 1: Set Up the Development Environment
+<br>
+
+Website: https://remix.ethereum.org
+<br>
+
+It’s an online editor where you can write, test, and deploy Solidity code directly in your browser. No installation needed.
+<br>
+Step 2: Write Your First Smart Contract (in Solidity)
+```
+
+pragma solidity ^0.8.0;
+
+contract HelloWorld {
+    string public message = "Hello Blockchain!";
+
+    function setMessage(string memory newMessage) public {
+        message = newMessage;
+    }
+}
+```
+
+
+
+
+
+
 
 
