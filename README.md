@@ -322,7 +322,9 @@ Click Compile to check for errors.
 ![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/92560e5cd5ca1bb7e9dc396a167071b2736e2d80/Screenshot%202025-05-18%20165643.png)
 
 
-![image alt](
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/147aeb72ed44701e8e23b96c314974b5d0242da6/Screenshot%202025-05-18%20165656.png)
+
+
 
 Step 4: Deploy the Smart Contract Go to the Deploy & Run Transactions tab in Remix.
 <br>
