@@ -496,7 +496,7 @@ contract StudentRecords {
 
 
 # deploying on blockchain
-![image alt]()
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/2ec0f7db75d0a501075251376e8be83c04a84256/Screenshot%202025-05-19%20143404.png)
 
 
 
