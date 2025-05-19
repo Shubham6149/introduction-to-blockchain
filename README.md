@@ -441,6 +441,72 @@ contract Voting {
 
 
 
+# Q2 Write a contract that manages a list of student records (name, roll number). Allow adding and retrieving student data.
+
+# code
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+/**
+ * @title StudentRecords
+ * @custom:dev-run-script ./scripts/deploy_student_records.js
+ */
+contract StudentRecords {
+    struct Student {
+        string name;
+        uint256 rollNumber;
+    }
+
+    mapping(uint256 => Student) private students;
+    uint256[] private rollNumbers;
+
+    event StudentAdded(string name, uint256 rollNumber);
+
+    modifier uniqueRollNumber(uint256 rollNumber) {
+        require(bytes(students[rollNumber].name).length == 0, "Student already exists.");
+        _;
+    }
+
+    function addStudent(string memory _name, uint256 _rollNumber) public uniqueRollNumber(_rollNumber) {
+        students[_rollNumber] = Student(_name, _rollNumber);
+        rollNumbers.push(_rollNumber);
+        emit StudentAdded(_name, _rollNumber);
+    }
+
+    function getStudent(uint256 _rollNumber) public view returns (string memory name, uint256 rollNumber) {
+        require(bytes(students[_rollNumber].name).length > 0, "Student not found.");
+        Student memory student = students[_rollNumber];
+        return (student.name, student.rollNumber);
+    }
+
+    function getAllRollNumbers() public view returns (uint256[] memory) {
+        return rollNumbers;
+    }
+
+    function getStudentCount() public view returns (uint256) {
+        return rollNumbers.length;
+    }
+}
+```
+
+
+# compiling the code
+![image alt]()
+
+
+# deploying on blockchain
+![image alt]()
+
+
+
+# After Deploying we can see the green tick which show our contract is deployed on the blockchain
+![image alt]()
+
+
+
+
+
 
 
 
