@@ -751,7 +751,7 @@ contract SimpleAuction {
 ```
 
 # compiling the code
-![image alt]()
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/4c9ad9c27c024a81883e195914190dae1ee30463/Screenshot%202025-05-19%20150611.png)
 
 
 
