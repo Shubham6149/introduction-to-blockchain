@@ -823,7 +823,7 @@ contract EtherSplitter {
 ```
 
 # compiling the code
-![image alt]()
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/bf43cebaa9ab317e628a800509eb9bf482b2d959/Screenshot%202025-05-19%20151426.png)
 
 
 
