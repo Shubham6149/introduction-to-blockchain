@@ -424,9 +424,15 @@ contract Voting {
 
 
 # deploying on blockchain
-![image alt]()
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/90cdb849160a4499d54f10d0995dcf5b208ad3da/Screenshot%202025-05-19%20140019.png)
 
 # After Deploying we can see the green tick which show our contract is deployed on the blockchain
+
+![image alt]()
+
+
+
+![image alt]()
 
 
 
