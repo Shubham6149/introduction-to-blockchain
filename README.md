@@ -492,7 +492,7 @@ contract StudentRecords {
 
 
 # compiling the code
-![image alt]()
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/5aeb85e7e212072ee703a9b67ad39cb77d5e3761/Screenshot%202025-05-19%20143304.png)
 
 
 # deploying on blockchain
