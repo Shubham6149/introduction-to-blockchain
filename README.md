@@ -501,7 +501,338 @@ contract StudentRecords {
 
 
 # After Deploying we can see the green tick which show our contract is deployed on the blockchain
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/18b91c8830423ff20e57b5a0c9f31c9499c91045/Screenshot%202025-05-19%20143416.png)
+
+
+
+# 3 Develop a contract that only allows the deployer (owner) to call a specific function (use modifiers).
+
+# code
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+/**
+ * @title OwnerOnly
+ * @dev This contract allows only the deployer (owner) to call specific functions.
+ * @custom:dev-run-script ./scripts/deploy_owner_only.js
+ */
+contract OwnerOnly {
+    address public owner;
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Only the owner can call this function.");
+        _;
+    }
+
+    constructor() {
+        owner = msg.sender;
+    }
+
+    function ownerOnlyFunction() public onlyOwner {
+        // Logic that only the owner can execute
+    }
+
+    function publicFunction() public {
+        // Logic that anyone can execute
+    }
+
+    function transferOwnership(address newOwner) public onlyOwner {
+        require(newOwner != address(0), "New owner cannot be the zero address.");
+        owner = newOwner;
+    }
+}
+```
+
+# compiling the code
 ![image alt]()
+
+
+# deploying on blockchain
+![image alt]()
+
+
+
+# After Deploying we can see the green tick which show our contract is deployed on the blockchain
+![image alt] ()
+
+
+
+
+# 4 Write a contract where people can donate Ether and the top 3 donors are tracked.
+
+# code
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+/**
+ * @title TopDonors
+ * @dev This contract allows people to donate Ether and tracks the top 3 donors.
+ * @custom:dev-run-script ./scripts/deploy_top_donors.js
+ */
+contract TopDonors {
+    struct Donor {
+        address addr;
+        uint256 amount;
+    }
+
+    // Array to store the top 3 donors
+    Donor[3] public topDonors;
+
+    // Event emitted when a donation is made
+    event DonationReceived(address indexed donor, uint256 amount);
+    event TopDonorsUpdated(address[3] addresses, uint256[3] amounts);
+
+    // Function to donate Ether
+    function donate() external payable {
+        require(msg.value > 0, "Donation must be greater than zero.");
+
+        // Emit the donation event
+        emit DonationReceived(msg.sender, msg.value);
+
+        // Update the top 3 donors
+        updateTopDonors(msg.sender, msg.value);
+    }
+
+    // Internal function to update the top 3 donors list
+    function updateTopDonors(address _donor, uint256 _amount) internal {
+        for (uint256 i = 0; i < 3; i++) {
+            if (topDonors[i].addr == _donor) {
+                topDonors[i].amount += _amount;
+                sortTopDonors();
+                emitTopDonors();
+                return;
+            }
+        }
+
+        if (_amount > topDonors[2].amount) {
+            topDonors[2] = Donor(_donor, _amount);
+            sortTopDonors();
+            emitTopDonors();
+        }
+    }
+
+    // Sort the top donors by the amount in descending order
+    function sortTopDonors() internal {
+        for (uint256 i = 0; i < 3; i++) {
+            for (uint256 j = i + 1; j < 3; j++) {
+                if (topDonors[j].amount > topDonors[i].amount) {
+                    Donor memory temp = topDonors[i];
+                    topDonors[i] = topDonors[j];
+                    topDonors[j] = temp;
+                }
+            }
+        }
+    }
+
+    // Emit the top donors
+    function emitTopDonors() internal {
+        address[3] memory addresses;
+        uint256[3] memory amounts;
+        for (uint256 i = 0; i < 3; i++) {
+            addresses[i] = topDonors[i].addr;
+            amounts[i] = topDonors[i].amount;
+        }
+        emit TopDonorsUpdated(addresses, amounts);
+    }
+
+    // Public function to view the top 3 donors
+    function getTopDonors() public view returns (address[3] memory, uint256[3] memory) {
+        address[3] memory addresses;
+        uint256[3] memory amounts;
+        for (uint256 i = 0; i < 3; i++) {
+            addresses[i] = topDonors[i].addr;
+            amounts[i] = topDonors[i].amount;
+        }
+        return (addresses, amounts);
+    }
+}
+```
+
+# compiling the code
+![image alt]()
+
+
+
+# deploying on blockchain
+![image alt]()
+
+
+# After Deploying we can see the green tick which show our contract is deployed on the blockchain
+![image alt] ()
+
+
+
+# 5 Implement a simple auction system where users can place bids, and the highest bidder wins.
+
+
+# code
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+/**
+ * @title SimpleAuction
+ * @dev A simple auction contract where users can place bids, and the highest bidder wins.
+ * @custom:dev-run-script ./scripts/deploy_simple_auction.js
+ */
+contract SimpleAuction {
+    address public owner;
+    uint256 public auctionEndTime;
+    address public highestBidder;
+    uint256 public highestBid;
+
+    mapping(address => uint256) public pendingReturns;
+    bool public ended;
+
+    event AuctionStarted(uint256 duration);
+    event HighestBidIncreased(address bidder, uint256 amount);
+    event AuctionEnded(address winner, uint256 amount);
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Only the owner can call this function.");
+        _;
+    }
+
+    modifier auctionActive() {
+        require(block.timestamp < auctionEndTime, "Auction already ended.");
+        _;
+    }
+
+    modifier auctionEnded() {
+        require(block.timestamp >= auctionEndTime, "Auction not yet ended.");
+        require(!ended, "Auction end has already been called.");
+        _;
+    }
+
+    constructor(uint256 _biddingTime) {
+        owner = msg.sender;
+        auctionEndTime = block.timestamp + _biddingTime;
+        emit AuctionStarted(_biddingTime);
+    }
+
+    /// @dev Bid function where users place their bids
+    function bid() external payable auctionActive {
+        require(msg.value > highestBid, "There already is a higher bid.");
+
+        if (highestBid != 0) {
+            pendingReturns[highestBidder] += highestBid;
+        }
+
+        highestBidder = msg.sender;
+        highestBid = msg.value;
+        emit HighestBidIncreased(msg.sender, msg.value);
+    }
+
+    /// @dev Withdraw function to retrieve overbid funds
+    function withdraw() external returns (bool) {
+        uint256 amount = pendingReturns[msg.sender];
+        require(amount > 0, "No funds to withdraw.");
+
+        pendingReturns[msg.sender] = 0;
+
+        if (!payable(msg.sender).send(amount)) {
+            pendingReturns[msg.sender] = amount;
+            return false;
+        }
+        return true;
+    }
+
+    /// @dev Ends the auction and sends the highest bid to the owner
+    function endAuction() external onlyOwner auctionEnded {
+        ended = true;
+        emit AuctionEnded(highestBidder, highestBid);
+
+        (bool success, ) = payable(owner).call{value: highestBid}("");
+        require(success, "Transfer failed.");
+    }
+}
+```
+
+# compiling the code
+![image alt]()
+
+
+
+# deploying on blockchain
+![image alt]()
+
+
+# After Deploying we can see the green tick which show our contract is deployed on the blockchain
+![image alt] ()
+
+
+
+
+# 6 Create a contract that splits incoming Ether between 3 fixed addresses.
+
+# code
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+/**
+ * @title EtherSplitter
+ * @dev This contract splits incoming Ether equally between three fixed addresses.
+ * @custom:dev-run-script ./scripts/deploy_ether_splitter.js
+ */
+contract EtherSplitter {
+    address payable public recipient1;
+    address payable public recipient2;
+    address payable public recipient3;
+
+    event EtherReceived(address indexed sender, uint256 amount);
+    event EtherSplit(uint256 amount1, uint256 amount2, uint256 amount3);
+
+    /**
+     * @dev Initializes the contract with three fixed addresses.
+     * @param _recipient1 The first recipient address.
+     * @param _recipient2 The second recipient address.
+     * @param _recipient3 The third recipient address.
+     */
+    constructor(address payable _recipient1, address payable _recipient2, address payable _recipient3) {
+        require(_recipient1 != address(0) && _recipient2 != address(0) && _recipient3 != address(0), "Invalid address");
+        recipient1 = _recipient1;
+        recipient2 = _recipient2;
+        recipient3 = _recipient3;
+    }
+
+    /**
+     * @dev Receive function to automatically split Ether upon reception.
+     */
+    receive() external payable {
+        require(msg.value > 0, "No Ether sent");
+        emit EtherReceived(msg.sender, msg.value);
+
+        uint256 splitAmount = msg.value / 3;
+
+        // Transfer the split amounts
+        (bool sent1, ) = recipient1.call{value: splitAmount}("");
+        require(sent1, "Transfer to recipient1 failed");
+
+        (bool sent2, ) = recipient2.call{value: splitAmount}("");
+        require(sent2, "Transfer to recipient2 failed");
+
+        (bool sent3, ) = recipient3.call{value: msg.value - (2 * splitAmount)}("");
+        require(sent3, "Transfer to recipient3 failed");
+
+        emit EtherSplit(splitAmount, splitAmount, msg.value - (2 * splitAmount));
+    }
+}
+```
+
+# compiling the code
+![image alt]()
+
+
+
+# deploying on blockchain
+![image alt]()
+
+
+# After Deploying we can see the green tick which show our contract is deployed on the blockchain
+![image alt] ()
 
 
 
