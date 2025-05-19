@@ -351,6 +351,86 @@ This simulates how smart contracts work on blockchain.
 
 
 
+# Q1 Create a voting system with multiple candidates. Each address can vote only once.
+
+# code
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract Voting {
+    address public owner;
+    mapping(address => bool) public hasVoted;
+    mapping(string => uint256) public votes;
+    string[] public candidates;
+    bool public votingOpen;
+
+    event Voted(address indexed voter, string candidate);
+    event VotingStatusChanged(bool isOpen);
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Only owner can call this function.");
+        _;
+    }
+
+    modifier onlyWhileOpen() {
+        require(votingOpen, "Voting is not open.");
+        _;
+    }
+
+    constructor(string[] memory _candidates) {
+        owner = msg.sender;
+        candidates = _candidates;
+        votingOpen = true;
+    }
+
+    function vote(string memory candidate) public onlyWhileOpen {
+        require(!hasVoted[msg.sender], "You have already voted.");
+        require(isValidCandidate(candidate), "Invalid candidate.");
+
+        hasVoted[msg.sender] = true;
+        votes[candidate] += 1;
+        emit Voted(msg.sender, candidate);
+    }
+
+    function isValidCandidate(string memory candidate) internal view returns (bool) {
+        for (uint256 i = 0; i < candidates.length; i++) {
+            if (keccak256(abi.encodePacked(candidates[i])) == keccak256(abi.encodePacked(candidate))) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    function getCandidates() public view returns (string[] memory) {
+        return candidates;
+    }
+
+    function getVotes(string memory candidate) public view returns (uint256) {
+        require(isValidCandidate(candidate), "Invalid candidate.");
+        return votes[candidate];
+    }
+
+    function changeVotingStatus(bool _status) public onlyOwner {
+        votingOpen = _status;
+        emit VotingStatusChanged(_status);
+    }
+}
+```
+
+# compiling the code
+![image alt]()
+
+
+
+# deploying on blockchain
+![image alt]()
+
+# After Deploying we can see the green tick which show our contract is deployed on the blockchain
+
+
+
+
 
 
 
