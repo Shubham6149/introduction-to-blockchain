@@ -419,7 +419,7 @@ contract Voting {
 ```
 
 # compiling the code
-![image alt]()
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/8704ffac73fc388592e59c160b7124420bf39b80/Screenshot%202025-05-19%20140000.png)
 
 
 
