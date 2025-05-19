@@ -828,7 +828,7 @@ contract EtherSplitter {
 
 
 # deploying on blockchain
-![image alt]()
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/484d30cf224fd408c1fdc0e4d5f3cb96bf58f030/Screenshot%202025-05-19%20151444.png)
 
 
 # After Deploying we can see the green tick which show our contract is deployed on the blockchain
