@@ -760,7 +760,7 @@ contract SimpleAuction {
 
 
 # After Deploying we can see the green tick which show our contract is deployed on the blockchain
-![image alt] ()
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/f1ca610b535351b3d635eb85918f67b5f3a1688f/Screenshot%202025-05-19%20150716.png)
 
 
 
