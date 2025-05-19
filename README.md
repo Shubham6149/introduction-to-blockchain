@@ -545,7 +545,7 @@ contract OwnerOnly {
 ```
 
 # compiling the code
-![image alt]()
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/8a7233439e731e627a8b44707c9067065f1a4adb/Screenshot%202025-05-19%20144026.png)
 
 
 # deploying on blockchain
