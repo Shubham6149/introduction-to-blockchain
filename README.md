@@ -554,7 +554,7 @@ contract OwnerOnly {
 
 
 # After Deploying we can see the green tick which show our contract is deployed on the blockchain
-![image alt] ()
+![image alt](https://github.com/Shubham6149/introduction-to-blockchain/blob/1cdb7e55d7ceea3e8adb4ffe496a50d849f3fe0e/Screenshot%202025-05-19%20144050.png)
 
 
 
