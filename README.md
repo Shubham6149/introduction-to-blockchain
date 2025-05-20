@@ -353,7 +353,7 @@ This simulates how smart contracts work on blockchain.
 
 
 
-# PRACTICALS:-
+# *PRACTICALS*:-
 
 
 # Q1 Create a voting system with multiple candidates. Each address can vote only once.
